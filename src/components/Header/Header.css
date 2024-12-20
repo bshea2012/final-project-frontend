@@ -1,0 +1,110 @@
+.header {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  height: 576px;
+  background: url("../../assets/images/georgia-de-lotz--UsJoNxLaNo-unsplash.png")
+    center no-repeat;
+}
+
+.header__content {
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.2) inset;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 19px 0 13px;
+}
+
+.header__title {
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__nav {
+  display: flex;
+  margin: 0 0 0 auto;
+  align-items: center;
+}
+
+.header__home-button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: #b6bcbf;
+  text-decoration: none;
+  position: relative;
+}
+
+.header__saved-button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: #b6bcbf;
+  margin: 0 0 0 76px;
+  text-decoration: none;
+}
+
+.header__button_active {
+  color: #fff;
+  border-bottom: 3px;
+}
+
+.header__user-container {
+  display: flex;
+  margin: 0 0 0 64px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+}
+
+.header__user-container-box {
+  display: flex;
+  padding: 12px 15px 12px 19px;
+}
+
+.header__user-name {
+  margin: 0 20px 0 0;
+}
+
+.header__user-logout {
+  border: none;
+  cursor: pointer;
+  background: url("../../assets/logout-button.svg") transparent no-repeat center /
+    contain;
+}
+
+.header__user-container-signin {
+  margin: 0 0 0 42px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.header__user-signin {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  padding: 12px;
+  width: 152px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    height: 536px;
+    background-size: cover;
+  }
+}
