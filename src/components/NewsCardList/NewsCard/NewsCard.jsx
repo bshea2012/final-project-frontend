@@ -75,14 +75,14 @@ function NewsCard({ item, onSaveClick, isLoggedIn, onDeleteClick }) {
         </div>
       )}
 
-      <div className="card__container">
+      <section className="card__container">
         <p className="card__date">{publishedDate}</p>
         <a href={item.url} className="card__title">
           {item.title}
         </a>
         <p className="card__description">{item.description}</p>
         <p className="card__source">{item.source.name}</p>
-      </div>
+      </section>
     </li>
   );
 }

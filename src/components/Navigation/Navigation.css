@@ -23,7 +23,7 @@
 }
 
 .nav__content {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
@@ -40,11 +40,17 @@
 }
 
 .nav__title {
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
   color: #fff;
+}
+
+.nav__title:hover,
+.nav__user-logout:hover,
+.nav__user-signin:hover {
+  opacity: 0.85;
 }
 
 .nav__container {
@@ -64,6 +70,11 @@
   text-decoration: none;
   color: #b6bcbf;
   position: relative;
+  opacity: 0.85;
+}
+
+.nav__link:hover {
+  opacity: 1;
 }
 
 .nav__link_active {
@@ -91,6 +102,10 @@
 
 .nav__user_name {
   margin: 0;
+  white-space: nowrap;
+  width: 10ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .nav__user-signin {
@@ -111,6 +126,10 @@
 
 .nav__dark {
   color: #1a1b22;
+}
+
+.nav__dark-logout:hover {
+  opacity: 0.85;
 }
 
 .nav__dark-border {
@@ -191,7 +210,23 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 500px) {
+  .nav__container {
+    visibility: hidden;
+    display: none;
+  }
+
+  .nav__mobile-button {
+    display: inherit;
+    width: 24px;
+    height: 24px;
+    background: url(../../assets/mobile-menu-button.svg) transparent;
+    border: none;
+    cursor: pointer;
+  }
+} */
+
+@media screen and (max-width: 600px) {
   .nav__content {
     /* background-color: blue; */
   }
