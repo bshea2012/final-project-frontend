@@ -1,0 +1,228 @@
+.card {
+  height: 576px;
+  width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  position: relative;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #1a1b22;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  max-width: 100%;
+  height: 272px;
+  border-radius: 16px 16px 0 0;
+  /* outline: 1px solid red; */
+}
+
+.card__save-keyword {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 22px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.card__save-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 227px;
+  justify-content: flex-end;
+}
+
+.card__save-container {
+  background: #fff;
+  border-radius: 8px;
+  height: 40px;
+  width: 40px;
+}
+
+.card__save-button {
+  background: transparent url(../../../assets/save-inactive.svg) 50% no-repeat;
+  width: 14px;
+  height: 19px;
+  margin: 11px 13px 10px 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.card__save-button:hover {
+  background-image: url(../../../assets/save-inactive-hover.svg);
+}
+
+.card__save-button_active {
+  background: transparent url(../../../assets/save-active.svg) 50% no-repeat;
+  width: 14px;
+  height: 19px;
+  margin: 11px 13px 10px 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.card__save-banner {
+  /* width: 182px; */
+  background: #fff;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 13px 20px;
+}
+
+.card__container {
+  padding: 20px 24px 24px;
+}
+
+.card__delete {
+  background: transparent url(../../../assets/trash_inactive.svg) 50% no-repeat;
+  border: none;
+  width: 24px;
+  height: 24px;
+  margin: 8px 8px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.card__delete:hover {
+  background-image: url(../../../assets/trash_active.svg);
+}
+
+.card__date {
+  margin: 0 0 12px 0;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #b6bcbf;
+}
+
+.card__title {
+  margin: 0 0 16px 0;
+  font-size: 26px;
+  line-height: 30px;
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  height: 60px;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-decoration: none;
+  color: #1a1b22;
+}
+
+.card__description {
+  margin: 0 0 18px 0;
+  height: 110px;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.card__source {
+  line-height: 20px;
+  font-weight: 700;
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  color: #b6bcbf;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 224px;
+    height: 420px;
+  }
+
+  .card__image {
+    height: 150px;
+  }
+
+  .card__title {
+    font-size: 22px;
+    line-height: 24px;
+    height: 72px;
+    margin: 0 0 10px 0;
+  }
+
+  .card__container {
+    padding: 16px;
+  }
+
+  .card__description {
+    height: 88px;
+    margin: 0 0 12px 0;
+  }
+
+  .card__source {
+    margin: 0;
+  }
+
+  .card__save-wrapper {
+    top: 8px;
+    right: 8px;
+  }
+
+  .card__save-keyword {
+    top: 8px;
+    left: 8px;
+  }
+
+  .card__save-banner {
+    position: absolute;
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 288px;
+    height: 440px;
+  }
+
+  .card__image {
+    width: 100%;
+    height: 196px;
+  }
+
+  .card__save-wrapper {
+    top: 16px;
+    right: 16px;
+  }
+
+  .card__save-keyword {
+    top: 16px;
+    left: 16px;
+  }
+
+  .card__save-banner {
+    padding: 13px 10px;
+    position: absolute;
+    top: 50px;
+  }
+
+  .card__title {
+    height: 48px;
+    margin: 0 0 14px;
+  }
+
+  .card__date {
+    margin: 0 0 10px;
+  }
+
+  .card__description {
+    margin: 0 0 8px;
+  }
+}

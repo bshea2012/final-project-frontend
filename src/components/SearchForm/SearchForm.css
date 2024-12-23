@@ -1,0 +1,124 @@
+.search-form {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+}
+
+.search-form__container {
+  margin: 80px auto;
+  max-width: 608px;
+}
+
+.search-form__title {
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  line-height: 64px;
+  margin: 0 0 32px;
+}
+
+.search-form__description {
+  margin: 0 0 88px;
+}
+
+.search-form__bar {
+  width: 100%;
+  position: relative;
+  height: 64px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.search-form__bar-input {
+  border: none;
+  padding: 0;
+  margin: 21px auto 21px 24px;
+  width: 376px;
+}
+
+.search-form__bar-submit {
+  border: none;
+  border-radius: 100px;
+  background: #2f71e5;
+  cursor: pointer;
+  width: 168px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  padding: 0;
+}
+
+.search-form__bar-submit:hover {
+  background: #347eff;
+}
+
+.search-form__bar-submit:active {
+  background: #2a65cc;
+}
+
+.search-form__error {
+  color: #fff;
+  margin: 10px 0 0;
+  padding: 0 0 0 25px;
+  background: rgba(255, 0, 0, 0.75);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .search-form {
+    /* background-color: rgba(255, 0, 0, 0.75); */
+  }
+
+  .search-form__title {
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0 0 16px;
+  }
+
+  .search-form__container {
+    max-width: 448px;
+    margin: 38px auto 48px;
+    padding: 0 16px;
+  }
+
+  .search-form__bar {
+    height: 56px;
+  }
+
+  .search-form__description {
+    margin: 0 0 48px;
+  }
+
+  .search-form__bar-input {
+    margin: 17px auto 17px 24px;
+    width: 228px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search-form__container {
+    max-width: 288px;
+    margin: 30px auto 32px;
+  }
+
+  .search-form__bar {
+    margin: 0 0 16px;
+  }
+
+  .search-form__description {
+    margin: 0 0 122px;
+  }
+
+  .search-form__bar-submit {
+    top: 72px;
+    width: 100%;
+  }
+}

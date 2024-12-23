@@ -1,0 +1,21 @@
+.page {
+  background: #fff;
+}
+
+.page__content {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* .page__section {
+  max-width: 1232px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+} */
+
+@media screen and (max-width: 768px) {
+  /* .page__section {
+    max-width: 688px;
+  } */
+}
